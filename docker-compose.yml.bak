@@ -14,7 +14,7 @@ services:
       - GITHUB_TOKEN=${GITHUB_TOKEN}
     command: >
       sh -c "apk add --no-cache git &&
-             git clone https://${GITHUB_TOKEN}:x-oauth-basic@github.com/faustosip/suplente-avatar.git /tmp/app &&
+             git clone https://${GITHUB_TOKEN}:x-oauth-basic@github.com/faustosip/suplente-ai-avatar.git /tmp/app &&
              cd /tmp/app &&
              npm install &&
              npm run dev -- -H 0.0.0.0"
