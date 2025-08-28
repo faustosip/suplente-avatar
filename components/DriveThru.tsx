@@ -230,7 +230,7 @@ export default function DriveThru() {
               {/* </span> */}
             {/* </div> */}
           {/* </div> */}
-        {/* </div> */}
+        </div>
 
         {/* Control buttons */}
         <div className="flex justify-center">
