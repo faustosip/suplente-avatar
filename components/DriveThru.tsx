@@ -199,7 +199,7 @@ export default function DriveThru() {
           Natal<span className="neon-text text-cyan-300 sophia-glow">IA</span>
           </span>
         </h1>
-        <p className="text-lg text-center text-cyan-300/80">Aagenda con tu voz. NatalIA está escuchando.</p>
+        <p className="text-lg text-center text-cyan-300/80">Agenda con tu voz. NatalIA está escuchando.</p>
       </header>
 
       {/* Main content - Centered Avatar */}
@@ -226,7 +226,7 @@ export default function DriveThru() {
           <div className="absolute bottom-4 left-4 right-4">
             <div className="bg-black/80 px-4 py-3 rounded-full backdrop-blur-sm text-center">
               <span className="text-sm font-medium text-cyan-300">
-                ¡Hola! Soy Natalia, tu asistente virtual. Natalia en Reposo para comenzar
+                {/* ¡Hola! Soy Natalia, tu asistente virtual. Natalia en Reposo para comenzar */}
               </span>
             </div>
           </div>
