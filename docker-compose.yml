@@ -30,7 +30,7 @@ services:
           memory: 1024M
       labels:
         - traefik.enable=true
-        - traefik.http.routers.suplente-avatar.rule=Host(`suplente.agentcrmai.com`)
+        - traefik.http.routers.suplente-avatar.rule=Host(`natalia.agentcrmai.com`)
         - traefik.http.services.suplente-avatar.loadbalancer.server.port=3000
         - traefik.http.routers.suplente-avatar.service=suplente-avatar
         - traefik.http.routers.suplente-avatar.entrypoints=websecure
