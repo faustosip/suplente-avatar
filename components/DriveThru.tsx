@@ -223,14 +223,14 @@ export default function DriveThru() {
           </div>
 
           {/* Avatar message */}
-          <div className="absolute bottom-4 left-4 right-4">
-            <div className="bg-black/80 px-4 py-3 rounded-full backdrop-blur-sm text-center">
-              <span className="text-sm font-medium text-cyan-300">
+          {/* <div className="absolute bottom-4 left-4 right-4"> */}
+            {/* <div className="bg-black/80 px-4 py-3 rounded-full backdrop-blur-sm text-center"> */}
+              {/* <span className="text-sm font-medium text-cyan-300"> */}
                 {/* ¡Hola! Soy Natalia, tu asistente virtual. Natalia en Reposo para comenzar */}
-              </span>
-            </div>
-          </div>
-        </div>
+              {/* </span> */}
+            {/* </div> */}
+          {/* </div> */}
+        {/* </div> */}
 
         {/* Control buttons */}
         <div className="flex justify-center">

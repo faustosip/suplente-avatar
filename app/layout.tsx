@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'NatalIA - Agenda tus citas con tu voz',
-  description: 'AI-Powered Drive-Thru Experience with VAPI and Simli',
+  description: 'AI-Powered Drive-Thru Experience with Natalia',
 }
 
 export default function RootLayout({
