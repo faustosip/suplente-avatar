@@ -170,7 +170,7 @@ export default function DriveThru() {
       {/* Loading Screen */}
       <LoadingScreen 
         isVisible={isInitialLoading} 
-        message="NatalIA - Auto Suplente"
+        message="NataliA - Auto Suplente"
       />
 
       {/* Notification System */}
