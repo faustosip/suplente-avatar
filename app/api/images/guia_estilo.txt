@@ -1,0 +1,19 @@
+
+Guía Rápida de Estilo - SophIA
+
+Colores:
+- Azul Neón: #00E3FF
+- Fondo Oscuro: #0D0D0D
+- Texto Principal: #FFFFFF
+- Texto Secundario: #B0B0B0
+- Botón Principal: Degradado #00E3FF a #007BFF
+
+Tipografías:
+- Principal: 'Poppins', sans-serif
+- Alternativa: 'Inter', sans-serif
+
+Tamaños sugeridos:
+- Título (logo): 32-40px
+- Nombres de productos: 18-22px
+- Descripciones: 14-16px
+- Precios: 16-18px

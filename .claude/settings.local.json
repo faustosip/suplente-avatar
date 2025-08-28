@@ -1,0 +1,18 @@
+{
+  "enabledMcpjsonServers": [
+    "filesystem",
+    "n8nMCP-Google Calendar",
+    "n8nMCP-Gmail",
+    "n8nMCP-Google Sheets",
+    "n8nMCP-Google Docs",
+    "n8nMCP-Serpapi",
+    "n8nMCP-Pick",
+    "n8nMCP-Odoo",
+    "github",
+    "Context7",
+    "@magicuidesign/mcp",
+    "fetch",
+    "desktop-commander",
+    "vapi-mcp-server"
+  ]
+}
