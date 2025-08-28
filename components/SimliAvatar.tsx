@@ -399,7 +399,7 @@ export const SimliAvatar: React.FC<SimliAvatarProps> = ({
                 </p>
                 <p className="text-gray-300 text-xs mt-1">
                   {avatarState === 'static' 
-                    ? 'Presiona "Iniciar Orden" para comenzar' 
+                    ? 'Presiona "Agendar" para comenzar' 
                     : '¡Gracias por tu visita! Vuelve pronto 😊'}
                 </p>
               </div>
