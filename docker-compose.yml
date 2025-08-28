@@ -1,23 +1,25 @@
 version: "3.7"
 
 services:
-  ## --------------------------- SUPLENTE AVATAR --------------------------- ##
-  suplente-avatar:
+  ## --------------------------- NATALIA AVATAR --------------------------- ##
+  natalia-avatar:
     image: node:18-alpine
     working_dir: /app
     networks:
       - traefik_public
       - general_network
     environment:
+      - NEXT_PUBLIC_VAPI_PUBLIC_KEY=${NEXT_PUBLIC_VAPI_PUBLIC_KEY}
+      - NEXT_PUBLIC_VAPI_ASSISTANT_ID=${NEXT_PUBLIC_VAPI_ASSISTANT_ID}
       - NEXT_PUBLIC_SIMLI_API_KEY=${NEXT_PUBLIC_SIMLI_API_KEY}
-      - NEXT_PUBLIC_VAPI_API_KEY=${NEXT_PUBLIC_VAPI_API_KEY}
+      - NEXT_PUBLIC_SIMLI_FACE_ID=${NEXT_PUBLIC_SIMLI_FACE_ID}
       - GITHUB_TOKEN=${GITHUB_TOKEN}
     command: >
       sh -c "apk add --no-cache git &&
-         git clone https://${GITHUB_TOKEN}:x-oauth-basic@github.com/faustosip/suplente-avatar.git /tmp/app &&
-         cd /tmp/app &&
-         npm install --legacy-peer-deps &&
-         npm run dev -- -H 0.0.0.0"
+             git clone https://${GITHUB_TOKEN}:x-oauth-basic@github.com/faustosip/suplente-avatar.git /tmp/app &&
+             cd /tmp/app &&
+             npm install --legacy-peer-deps &&
+             npm run dev -- -H 0.0.0.0"
     deploy:
       mode: replicated
       replicas: 1
@@ -30,11 +32,11 @@ services:
           memory: 1024M
       labels:
         - traefik.enable=true
-        - traefik.http.routers.suplente-avatar.rule=Host(`natalia.agentcrmai.com`)
-        - traefik.http.services.suplente-avatar.loadbalancer.server.port=3000
-        - traefik.http.routers.suplente-avatar.service=suplente-avatar
-        - traefik.http.routers.suplente-avatar.entrypoints=websecure
-        - traefik.http.routers.suplente-avatar.tls.certresolver=le
+        - traefik.http.routers.natalia-avatar.rule=Host(`natalia.agentcrmai.com`)
+        - traefik.http.services.natalia-avatar.loadbalancer.server.port=3000
+        - traefik.http.routers.natalia-avatar.service=natalia-avatar
+        - traefik.http.routers.natalia-avatar.entrypoints=websecure
+        - traefik.http.routers.natalia-avatar.tls.certresolver=le
 
 networks:
   traefik_public:
